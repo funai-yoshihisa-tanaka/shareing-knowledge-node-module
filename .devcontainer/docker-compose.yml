@@ -1,0 +1,10 @@
+services:
+  dc:
+    build: .
+    volumes:
+      - home:/home/node
+      - ..:/workspaces
+    command: sleep infinity
+
+volumes:
+  home:
